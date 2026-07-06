@@ -22,26 +22,28 @@
 ## 架构说明
 
 ```text
-main.py
 agent/
   __init__.py
   runtime.py
   session.py
   llm_client.py
+config/
+  local_llm.example.json
+tests/
+  __init__.py
+  test_tools.py
+  test_runtime.py
+  test_e2e.py
 tools/
   __init__.py
   registry.py
   calculator.py
   search.py
   todo.py
-tests/
-  __init__.py
-  test_tools.py
-  test_runtime.py
-  test_e2e.py
-config/
-  local_llm.example.json
-requirements.txt
+main.py
+prompt_records.md(AI Prompt)
+question-answer.md(架构设计题)
+requirements.txt（环境）
 README.md
 ```
 
